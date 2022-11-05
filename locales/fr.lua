@@ -18,8 +18,7 @@ local Translations = {
         notown = "Vous ne possédez pas ce véhicule",
         buyertoopoor = "L\'acheteur n'a pas assez d'argent",
         nofinanced = "Vous n\'avez aucun véhicule financés",
-        financed = "Ce véhicule est financé",
-},
+    },
     success = {
         purchased = "Félicitations sur votre achat!",
         earned_commission = "Vous avez gagné $ %{amount} de commission",
@@ -75,11 +74,7 @@ local Translations = {
         command_transfervehicle_amount = "Montant de vente (optionnel)",
     },
 }
-
-if GetConvar('qb_locale', 'en') == 'fr' then
-    Lang = Locale:new({
-        phrases = Translations,
-        warnOnMissing = true,
-        fallbackLang = Lang,
-    })
-end
+Lang = Locale:new({
+    phrases = Translations,
+    warnOnMissing = true
+})

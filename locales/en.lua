@@ -18,7 +18,6 @@ local Translations = {
         notown = "You don\'t own this vehicle",
         buyertoopoor = "The buyer doesn\'t have enough money",
         nofinanced = "You don't have any financed vehicles",
-        financed = "This vehicle is financed",
     },
     success = {
         purchased = "Congratulations on your purchase!",
@@ -75,8 +74,7 @@ local Translations = {
         command_transfervehicle_amount = "Sell amount (optionnal)",
     }
 }
-
-Lang = Lang or Locale:new({
+Lang = Locale:new({
     phrases = Translations,
     warnOnMissing = true
 })
